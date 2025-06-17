@@ -18,9 +18,9 @@ steps:
       [
         'build',
         '-t',
-        'gcr.io/$PROJECT_ID/img-studio:latest',
+        'gcr.io/$gcp-genai-for-marketing-demo/img-studio:latest',
         '--build-arg',
-        '_NEXT_PUBLIC_PROJECT_ID=$PROJECT_ID',
+        '_NEXT_PUBLIC_PROJECT_ID=$gcp-genai-for-marketing-demo',
         '--build-arg',
         '_NEXT_PUBLIC_VERTEX_API_LOCATION=${us-east1}',
         '--build-arg',
@@ -48,7 +48,7 @@ steps:
         '.',
       ]
 images:
-  - 'gcr.io/$PROJECT_ID/img-studio:latest'
+  - 'gcr.io/$gcp-genai-for-marketing-demo/img-studio:latest'
 
 options:
   logging: CLOUD_LOGGING_ONLY
